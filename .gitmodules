@@ -1,0 +1,4 @@
+[submodule "discord-bot"]
+	path = discord-bot
+	url = https://github.com/mc-nations/discord-bot.git
+	branch = main

@@ -5,16 +5,24 @@ services:
     image: redis:alpine
     command: redis-server
     ports:
-      - 6379
+      - "6300:6379"
     networks:
       - redis-net
     environment:
       - ALLOW_EMPTY_PASSWORD=yes
-
+  discord-bot:
+    build: ./discord-bot
+    networks:
+      - redis-net
+    depends_on:
+      - redis
+      - minecraft
   minecraft:
     image: itzg/minecraft-server
     tty: true
     stdin_open: true
+    depends_on:
+      - redis
     ports:
       - "25565:25565"
     networks:
@@ -25,14 +33,18 @@ services:
       VERSION: "1.20"
       OVERRIDE_SERVER_PROPERTIES: "FALSE"
       COPY_CONFIG_DEST: "/data/"
+      REPLACE_ENV_IN_PLACE: "TRUE"
+      REPLACE_ENV_DURING_SYNC: "TRUE"
       SPIGET_RESOURCES: "19254,28140,46229,18494,6245,96577,111084"
-      # 19254: ViaVersion
+      # 19254: ViaVersion‚
       # 28140: Luckperms
       # 46229: TabList
       # 18494: DiscordSRV
       # 6245: Placeholder api
       # 96577: Player Time Limit
       # 111084: Ghost anti cheat
+    env_file:
+      - minecraft.env
 
     volumes:
       - ./plugins:/plugins

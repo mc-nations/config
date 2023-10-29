@@ -1,0 +1,25 @@
+opening_hours:
+  use: false
+  monday:
+    - open: "00:00"
+      close: "23:00"
+  tuesday:
+    - open: "10:00"
+      close: "00:00"
+  wednesday:
+    - open: "00:00"
+      close: "23:00"
+  thursday:
+    - open: "14:00"
+      close: "23:00"
+  friday:
+    - open: "16:00"
+      close: "00:00"
+  saturday:
+    - open: "10:00"
+      close: "00:00"
+  sunday:
+    - open: "00:00"
+      close: "00:00"
+remaining_uptime_intervals:
+  redis: 10

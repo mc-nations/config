@@ -22,7 +22,7 @@ Mute users who bypass speak permissions in the lobby: true
 Network:
   # Maximum distance between players in order to be connected
   Vertical Strength: 40
-  Horizontal Strength: 80
+  Horizontal Strength: 40
   # Once a player has joined a network, they can be
   # strength + falloff blocks away before being disconnected
   Falloff: 5

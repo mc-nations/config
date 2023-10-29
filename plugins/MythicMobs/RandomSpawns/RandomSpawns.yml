@@ -1,0 +1,38 @@
+# For more information, check out the plugin manual or join us on Discord:
+# http://www.mythicmobs.net
+#
+cow_spawn_snow:
+  Action: ADD
+  Type: snow_cow
+  Level: 1
+  Chance: 0.0005
+  Priority: 2
+  UseWorldScaling: false
+  Worlds: world
+  Biomes:
+    - SNOWY_PLAINS
+    - SNOWY_SLOPES
+    - SNOWY_TAIGA
+
+chicken_spawn:
+  Action: ADD
+  Type: kfc
+  Level: 1
+  Chance: 0.001
+  Priority: 2
+  UseWorldScaling: false
+  Worlds: world
+
+horse_spawn:
+  Action: ADD
+  Type: hecarim
+  Level: 1
+  Chance: 0.001
+  Priority: 2
+  UseWorldScaling: false
+  Worlds: world
+  Biomes:
+    - DESSERT
+    - SNOWY_PLAINS
+    - SNOWY_SLOPES
+    - SNOWY_TAIGA

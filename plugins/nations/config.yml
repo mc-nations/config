@@ -1,0 +1,56 @@
+event_start:
+  date: "2023-10-28"
+  time: "14:13"
+  disable_join: true
+
+motd_countdown: true
+
+game_rules:
+  enabled: true
+  world:
+    doInsomnia: false
+    doFireTick: false
+    doImmediateRespawn: true
+    doTraderSpawning: false
+    doWardenSpawning: false
+    reducedDebugInfo: true
+    showCoordinates: false
+
+teams:
+  schnee:
+    color: "AQUA"
+    prefix: "[Schnee] "
+    border:
+      x: -1792
+      z: -1792
+      size: 2560
+  wueste:
+    color: "YELLOW"
+    prefix: "[Wüste] "
+    border:
+      x: 1792
+      z: -1792
+      size: 2560
+  dschungel:
+    color: "GREEN"
+    prefix: "[Dschungel] "
+    border:
+      x: 0
+      z: 1792
+      size: 2560
+
+enforce_teams: true
+enable_random_spawn: true
+team_borders: true
+
+disable_mending: true
+
+spawn_exclusion:
+  max_height:
+    schnee: 100
+    wueste: 100
+    dschungel: 100
+  regions:
+    - x: 8
+      z: 2010
+      size: 200

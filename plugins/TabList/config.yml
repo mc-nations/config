@@ -2,8 +2,6 @@ hook:
 
   # Hook to PlaceholderAPI to use custom placeholders.
   placeholderapi: true
-hooks:
-  placeholderapi: true
 
 # This option monitors server performance. If the server's TPS is less than the set value,
 # TabList will cancels all currently running schedulers to improve server performance.
@@ -137,7 +135,7 @@ change-prefix-suffix-in-tablist:
 
   # Automatically add groups from another plugins to the tablist groups.yml on every reload?
   # If a plugin does not support Vault, it will not be added.
-  sync-plugins-groups-with-tablist: true
+  sync-plugins-groups-with-tablist: false
 
   # Hide player's group in player list when the player is vanished?
   # Requires Essentials, SuperVanish, PremiumVanish or CMI plugin
@@ -156,7 +154,7 @@ change-prefix-suffix-in-tablist:
   # If true, groups will be sorted using LuckPerms weight if those are set.
   # Groups with higher weight set, will appear first to the player.
   # If the weights are not set or this option is disabled, the first group with higher priority will appear first.
-  use-luckperms-weight-to-order-groups-to-first-place: false
+  use-luckperms-weight-to-order-groups-to-first-place: true
 
   # Follow the name tag visibility for players to show the name tag above player or not,
   # depending if a scoreboard team with visibility 'hidden' is exist.

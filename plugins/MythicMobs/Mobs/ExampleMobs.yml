@@ -1,0 +1,8 @@
+snow_cow:
+  type: COW
+
+kfc:
+  type: CHICKEN
+
+hecarim:
+  type: HORSE

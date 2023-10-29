@@ -29,13 +29,16 @@ services:
       - redis-net
     environment:
       EULA: "TRUE"
-      TYPE: "SPIGOT"
+      TYPE: "PURPUR"
       VERSION: "1.20"
       OVERRIDE_SERVER_PROPERTIES: "FALSE"
       COPY_CONFIG_DEST: "/data/"
       REPLACE_ENV_IN_PLACE: "TRUE"
       REPLACE_ENV_DURING_SYNC: "TRUE"
-      SPIGET_RESOURCES: "19254,28140,46229,18494,6245,96577,111084"
+      INIT_MEMORY: "${min_memory}"
+      MAX_MEMORY: "${max_memory}"
+      USE_AIKAR_FLAGS: "TRUE"
+      JVM_OPTS: "--add-modules=jdk.incubator.vector"
       # 19254: ViaVersion‚
       # 28140: Luckperms
       # 46229: TabList
@@ -43,6 +46,7 @@ services:
       # 6245: Placeholder api
       # 96577: Player Time Limit
       # 111084: Ghost anti cheat
+      # im ordner: ChatEx
     env_file:
       - minecraft.env
 

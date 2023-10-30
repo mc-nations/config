@@ -15,6 +15,7 @@ game_rules:
     doWardenSpawning: false
     reducedDebugInfo: true
     showCoordinates: false
+    announceAdvancements: false
 
 teams:
   schnee:

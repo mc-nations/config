@@ -1,0 +1,2 @@
+minecraft.command.msg:
+  default: op

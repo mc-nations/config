@@ -1,6 +1,6 @@
 event_start:
-  date: "2023-10-28"
-  time: "14:13"
+  date: "2023-11-04"
+  time: "12:00"
   disable_join: true
 
 motd_countdown: true
@@ -18,7 +18,7 @@ game_rules:
     announceAdvancements: false
 
 player_csv_file: "players.csv"
-player_csv_delimiter: ";"
+player_csv_delimiter: ","
 
 teams:
   schnee:

@@ -9,7 +9,8 @@ services:
     networks:
       - redis-net
     environment:
-      - ALLOW_EMPTY_PASSWORD=yes
+      ALLOW_EMPTY_PASSWORD: yes
+      TZ: "Europe/Berlin"
   discord-bot:
     build: ./discord-bot
     networks:
@@ -30,7 +31,7 @@ services:
     environment:
       EULA: "TRUE"
       TYPE: "PURPUR"
-      VERSION: "1.20"
+      VERSION: "1.20.1"
       OVERRIDE_SERVER_PROPERTIES: "FALSE"
       COPY_CONFIG_DEST: "/data/"
       REPLACE_ENV_IN_PLACE: "TRUE"
@@ -39,6 +40,7 @@ services:
       MAX_MEMORY: "${max_memory}"
       USE_AIKAR_FLAGS: "TRUE"
       JVM_OPTS: "--add-modules=jdk.incubator.vector"
+      TZ: "Europe/Berlin"
       # 19254: ViaVersion‚
       # 28140: Luckperms
       # 46229: TabList

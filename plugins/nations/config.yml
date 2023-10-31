@@ -17,6 +17,9 @@ game_rules:
     showCoordinates: false
     announceAdvancements: false
 
+player_csv_file: "players.csv"
+player_csv_delimiter: ";"
+
 teams:
   schnee:
     color: "AQUA"

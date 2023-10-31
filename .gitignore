@@ -12,6 +12,7 @@ tmp
 /plugins/ShrineRevive/*.json
 /plugins/spark/tmp
 /plugins/MythicMobs/SavedData
+/plugins/DriveBackupV2/OneDriveCredential.json
 
 *cache
 

@@ -27,21 +27,21 @@ teams:
     border:
       x: -1792
       z: -1792
-      size: 2560
+      size: 2304
   wueste:
     color: "YELLOW"
     prefix: "[Wüste] "
     border:
       x: 1792
       z: -1792
-      size: 2560
+      size: 2304
   dschungel:
     color: "GREEN"
     prefix: "[Dschungel] "
     border:
       x: 0
       z: 1792
-      size: 2560
+      size: 2304
 
 enforce_teams: true
 enable_random_spawn: true

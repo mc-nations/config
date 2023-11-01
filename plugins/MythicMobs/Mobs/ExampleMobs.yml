@@ -6,3 +6,24 @@ kfc:
 
 hecarim:
   type: HORSE
+
+shawn:
+  type: SHEEP
+
+camela:
+  type: CAMEL
+
+llama_index:
+  type: LLAMA
+
+kitten:
+  type: CAT
+
+ocelott:
+  type: OCELOT
+
+kon_fu_panda:
+  type: PANDA
+
+papa:
+  type: PARROT

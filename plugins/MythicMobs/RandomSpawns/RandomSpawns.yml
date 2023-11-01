@@ -1,7 +1,7 @@
 # For more information, check out the plugin manual or join us on Discord:
 # http://www.mythicmobs.net
 #
-cow_spawn_snow:
+cow_spawn_0_5:
   Action: ADD
   Type: snow_cow
   Level: 1
@@ -9,23 +9,129 @@ cow_spawn_snow:
   Priority: 2
   UseWorldScaling: false
   Worlds: world
-  Cooldown: 120
-  Biomes:
-    - SNOWY_PLAINS
-    - SNOWY_SLOPES
-    - SNOWY_TAIGA
+  Conditions:
+    - playersOnline{amount=>0}
+    - playersOnline{amount=<6}
 
-chicken_spawn:
+cow_spawn_5_15:
+  Action: ADD
+  Type: snow_cow
+  Level: 1
+  Chance: 0.0005
+  Priority: 2
+  UseWorldScaling: false
+  Worlds: world
+  Conditions:
+    - playersOnline{amount=>5}
+    - playersOnline{amount=<16}
+
+cow_spawn_15_25:
+  Action: ADD
+  Type: snow_cow
+  Level: 1
+  Chance: 0.0008
+  Priority: 2
+  UseWorldScaling: false
+  Worlds: world
+  Conditions:
+    - playersOnline{amount=>15}
+    - playersOnline{amount=<26}
+
+cow_spawn_25_50:
+  Action: ADD
+  Type: snow_cow
+  Level: 1
+  Chance: 0.001
+  Priority: 2
+  UseWorldScaling: false
+  Worlds: world
+  Conditions:
+    - playersOnline{amount=>25}
+    - playersOnline{amount=<51}
+
+cow_spawn_50_plus:
+  Action: ADD
+  Type: snow_cow
+  Level: 1
+  Chance: 0.002
+  Priority: 2
+  UseWorldScaling: false
+  Worlds: world
+  Conditions:
+    - playersOnline{amount=>50}
+
+##########################################################
+#
+# Chica
+#
+##########################################################
+
+chicken_spawn_0_5:
+  Action: ADD
+  Type: kfc
+  Level: 1
+  Chance: 0.0002
+  Priority: 2
+  UseWorldScaling: false
+  Worlds: world
+  Conditions:
+    - playersOnline{amount=>0}
+    - playersOnline{amount=<6}
+
+horse_spawn_5_15:
   Action: ADD
   Type: kfc
   Level: 1
   Chance: 0.001
   Priority: 2
   UseWorldScaling: false
-  Cooldown: 60
   Worlds: world
+  Conditions:
+    - playersOnline{amount=>5}
+    - playersOnline{amount=<16}
 
-horse_spawn:
+chicken_spawn_15_25:
+  Action: ADD
+  Type: kfc
+  Level: 1
+  Chance: 0.0016
+  Priority: 2
+  UseWorldScaling: false
+  Worlds: world
+  Conditions:
+    - playersOnline{amount=>15}
+    - playersOnline{amount=<26}
+
+chicken_spawn_25_50:
+  Action: ADD
+  Type: kfc
+  Level: 1
+  Chance: 0.002
+  Priority: 2
+  UseWorldScaling: false
+  Worlds: world
+  Conditions:
+    - playersOnline{amount=>25}
+    - playersOnline{amount=<51}
+
+chicken_spawn_50_plus:
+  Action: ADD
+  Type: kfc
+  Level: 1
+  Chance: 0.004
+  Priority: 2
+  UseWorldScaling: false
+  Worlds: world
+  Conditions:
+    - playersOnline{amount=>50}
+
+##########################################################
+#
+# Pferd
+#
+##########################################################
+
+horse_spawn_0_5:
   Action: ADD
   Type: hecarim
   Level: 1
@@ -33,9 +139,440 @@ horse_spawn:
   Priority: 2
   UseWorldScaling: false
   Worlds: world
-  Cooldown: 600
+  Bioms:
+    - SNOWY_PLAINS
+    - DESSERT
+  Conditions:
+    - playersOnline{amount=>0}
+    - playersOnline{amount=<6}
+
+horse_spawn_5_15:
+  Action: ADD
+  Type: hecarim
+  Level: 1
+  Chance: 0.0002
+  Priority: 2
+  UseWorldScaling: false
+  Worlds: world
+  Biomes:
+    - SNOWY_PLAINS
+    - DESSERT
+  Conditions:
+    - playersOnline{amount=>5}
+    - playersOnline{amount=<16}
+
+horse_spawn_15_25:
+  Action: ADD
+  Type: hecarim
+  Level: 1
+  Chance: 0.0005
+  Priority: 2
+  UseWorldScaling: false
+  Worlds: world
+  Biomes:
+    - SNOWY_PLAINS
+    - DESSERT
+  Conditions:
+    - playersOnline{amount=>15}
+    - playersOnline{amount=<26}
+
+horse_spawn_25_50:
+  Action: ADD
+  Type: hecarim
+  Level: 1
+  Chance: 0.0008
+  Priority: 2
+  UseWorldScaling: false
+  Worlds: world
+  Biomes:
+    - SNOWY_PLAINS
+    - DESSERT
+  Conditions:
+    - playersOnline{amount=>25}
+    - playersOnline{amount=<51}
+
+horse_spawn_50_plus:
+  Action: ADD
+  Type: hecarim
+  Level: 1
+  Chance: 0.001
+  Priority: 2
+  UseWorldScaling: false
+  Worlds: world
+  Biomes:
+    - SNOWY_PLAINS
+    - DESSERT
+  Conditions:
+    - playersOnline{amount=>50}
+
+##########################################################
+#
+# Schaf
+#
+##########################################################
+
+sheep_spawn_0_5:
+  Action: ADD
+  Type: shawn
+  Level: 1
+  Chance: 0.00005
+  Priority: 2
+  UseWorldScaling: false
+  Worlds: world
+  Conditions:
+    - playersOnline{amount=>0}
+    - playersOnline{amount=<6}
+
+sheep_spawn_5_15:
+  Action: ADD
+  Type: shawn
+  Level: 1
+  Chance: 0.0002
+  Priority: 2
+  UseWorldScaling: false
+  Worlds: world
+  Conditions:
+    - playersOnline{amount=>5}
+    - playersOnline{amount=<16}
+
+sheep_spawn_15_25:
+  Action: ADD
+  Type: shawn
+  Level: 1
+  Chance: 0.0005
+  Priority: 2
+  UseWorldScaling: false
+  Worlds: world
+  Conditions:
+    - playersOnline{amount=>15}
+    - playersOnline{amount=<26}
+
+sheep__spawn_25_50:
+  Action: ADD
+  Type: shawn
+  Level: 1
+  Chance: 0.0008
+  Priority: 2
+  UseWorldScaling: false
+  Worlds: world
+  Conditions:
+    - playersOnline{amount=>25}
+    - playersOnline{amount=<51}
+
+sheep_spawn_50_plus:
+  Action: ADD
+  Type: shawn
+  Level: 1
+  Chance: 0.001
+  Priority: 2
+  UseWorldScaling: false
+  Worlds: world
+  Conditions:
+    - playersOnline{amount=>50}
+
+##########################################################
+#
+# Camel/Llma
+#
+##########################################################
+
+camel_llama_spawn_0_5:
+  Action: ADD
+  Type: llama_index,camela
+  Level: 1
+  Chance: 0.00008
+  Priority: 2
+  UseWorldScaling: false
+  Worlds: world
+  Biomes:
+    - DESSERT
+  Conditions:
+    - playersOnline{amount=>0}
+    - playersOnline{amount=<6}
+
+camel_llama_spawn_5_15:
+  Action: ADD
+  Type: llama_index,camela
+  Level: 1
+  Chance: 0.0003
+  Priority: 2
+  UseWorldScaling: false
+  Worlds: world
+  Biomes:
+    - DESSERT
+  Conditions:
+    - playersOnline{amount=>5}
+    - playersOnline{amount=<16}
+
+camel_llama_spawn_15_25:
+  Action: ADD
+  Type: llama_index,camela
+  Level: 1
+  Chance: 0.001
+  Priority: 2
+  UseWorldScaling: false
+  Worlds: world
+  Biomes:
+    - DESSERT
+  Conditions:
+    - playersOnline{amount=>15}
+    - playersOnline{amount=<26}
+
+camel_llama__spawn_25_50:
+  Action: ADD
+  Type: llama_index,camela
+  Level: 1
+  Chance: 0.0013
+  Priority: 2
+  UseWorldScaling: false
+  Worlds: world
+  Biomes:
+    - DESSERT
+  Conditions:
+    - playersOnline{amount=>25}
+    - playersOnline{amount=<51}
+
+camel_llama_spawn_50_plus:
+  Action: ADD
+  Type: llama_index,camela
+  Level: 1
+  Chance: 0.0026
+  Priority: 2
+  UseWorldScaling: false
+  Worlds: world
+  Biomes:
+    - DESSERT
+  Conditions:
+    - playersOnline{amount=>50}
+
+##########################################################
+#
+# Panda/papaguai
+#
+##########################################################
+panda_spawn_0_5:
+  Action: ADD
+  Type: kon_fu_panda,papa
+  Level: 1
+  Chance: 0.00005
+  Priority: 2
+  UseWorldScaling: false
+  Worlds: world
+  Biomes:
+    - JUNGLE
+  Conditions:
+    - playersOnline{amount=>0}
+    - playersOnline{amount=<6}
+
+panda_spawn_5_15:
+  Action: ADD
+  Type: kon_fu_panda,papa
+  Level: 1
+  Chance: 0.0002
+  Priority: 2
+  UseWorldScaling: false
+  Worlds: world
+  Biomes:
+    - JUNGLE
+  Conditions:
+    - playersOnline{amount=>5}
+    - playersOnline{amount=<16}
+
+panda_spawn_15_25:
+  Action: ADD
+  Type: kon_fu_panda,papa
+  Level: 1
+  Chance: 0.0005
+  Priority: 2
+  UseWorldScaling: false
+  Worlds: world
+  Biomes:
+    - JUNGLE
+  Conditions:
+    - playersOnline{amount=>15}
+    - playersOnline{amount=<26}
+
+panda__spawn_25_50:
+  Action: ADD
+  Type: kon_fu_panda,papa
+  Level: 1
+  Chance: 0.0008
+  Priority: 2
+  UseWorldScaling: false
+  Worlds: world
+  Biomes:
+    - JUNGLE
+  Conditions:
+    - playersOnline{amount=>25}
+    - playersOnline{amount=<51}
+
+panda_spawn_50_plus:
+  Action: ADD
+  Type: kon_fu_panda,papa
+  Level: 1
+  Chance: 0.001
+  Priority: 2
+  UseWorldScaling: false
+  Worlds: world
+  Biomes:
+    - JUNGLE
+  Conditions:
+    - playersOnline{amount=>50}
+
+##########################################################
+#
+# Cat
+#
+##########################################################
+cat_spawn_0_5:
+  Action: ADD
+  Type: kitten
+  Level: 1
+  Chance: 0.00005
+  Priority: 2
+  UseWorldScaling: false
+  Worlds: world
   Biomes:
     - DESSERT
     - SNOWY_PLAINS
-    - SNOWY_SLOPES
     - SNOWY_TAIGA
+  Conditions:
+    - playersOnline{amount=>0}
+    - playersOnline{amount=<6}
+
+cat_spawn_5_15:
+  Action: ADD
+  Type: kitten
+  Level: 1
+  Chance: 0.0002
+  Priority: 2
+  UseWorldScaling: false
+  Worlds: world
+  Biomes:
+    - DESSERT
+    - SNOWY_PLAINS
+    - SNOWY_TAIGA
+  Conditions:
+    - playersOnline{amount=>5}
+    - playersOnline{amount=<16}
+
+cat_spawn_15_25:
+  Action: ADD
+  Type: kitten
+  Level: 1
+  Chance: 0.0005
+  Priority: 2
+  UseWorldScaling: false
+  Worlds: world
+  Biomes:
+    - DESSERT
+    - SNOWY_PLAINS
+    - SNOWY_TAIGA
+  Conditions:
+    - playersOnline{amount=>15}
+    - playersOnline{amount=<26}
+
+cat_spawn_25_50:
+  Action: ADD
+  Type: kitten
+  Level: 1
+  Chance: 0.0008
+  Priority: 2
+  UseWorldScaling: false
+  Worlds: world
+  Biomes:
+    - DESSERT
+    - SNOWY_PLAINS
+    - SNOWY_TAIGA
+  Conditions:
+    - playersOnline{amount=>25}
+    - playersOnline{amount=<51}
+
+cat_spawn_50_plus:
+  Action: ADD
+  Type: kitten
+  Level: 1
+  Chance: 0.001
+  Priority: 2
+  UseWorldScaling: false
+  Worlds: world
+  Biomes:
+    - DESSERT
+    - SNOWY_PLAINS
+    - SNOWY_TAIGA
+  Conditions:
+    - playersOnline{amount=>50}
+  
+##########################################################
+#
+# Ocelot
+#
+##########################################################
+ocelot_spawn_0_5:
+  Action: ADD
+  Type: ocelott
+  Level: 1
+  Chance: 0.00005
+  Priority: 2
+  UseWorldScaling: false
+  Worlds: world
+  Biomes:
+    - JUNGLE
+  Conditions:
+    - playersOnline{amount=>0}
+    - playersOnline{amount=<6}
+
+ocelot_spawn_5_15:
+  Action: ADD
+  Type: ocelott
+  Level: 1
+  Chance: 0.0002
+  Priority: 2
+  UseWorldScaling: false
+  Worlds: world
+  Biomes:
+    - JUNGLE
+  Conditions:
+    - playersOnline{amount=>5}
+    - playersOnline{amount=<16}
+
+ocelot_spawn_15_25:
+  Action: ADD
+  Type: ocelott
+  Level: 1
+  Chance: 0.0005
+  Priority: 2
+  UseWorldScaling: false
+  Worlds: world
+  Biomes:
+    - JUNGLE
+  Conditions:
+    - playersOnline{amount=>15}
+    - playersOnline{amount=<26}
+
+ocelot_spawn_25_50:
+  Action: ADD
+  Type: ocelott
+  Level: 1
+  Chance: 0.0008
+  Priority: 2
+  UseWorldScaling: false
+  Worlds: world
+  Biomes:
+    - JUNGLE
+  Conditions:
+    - playersOnline{amount=>25}
+    - playersOnline{amount=<51}
+
+ocelot_spawn_50_plus:
+  Action: ADD
+  Type: ocelott
+  Level: 1
+  Chance: 0.001
+  Priority: 2
+  UseWorldScaling: false
+  Worlds: world
+  Biomes:
+    - JUNGLE
+  Conditions:
+    - playersOnline{amount=>50}

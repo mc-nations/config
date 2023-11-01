@@ -9,7 +9,7 @@ services:
     networks:
       - redis-net
     environment:
-      ALLOW_EMPTY_PASSWORD: yes
+      ALLOW_EMPTY_PASSWORD: "TRUE"
       TZ: "Europe/Berlin"
   discord-bot:
     build: ./discord-bot

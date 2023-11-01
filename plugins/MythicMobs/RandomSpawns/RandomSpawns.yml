@@ -5,10 +5,11 @@ cow_spawn_snow:
   Action: ADD
   Type: snow_cow
   Level: 1
-  Chance: 0.0005
+  Chance: 0.0001
   Priority: 2
   UseWorldScaling: false
   Worlds: world
+  Cooldown: 120
   Biomes:
     - SNOWY_PLAINS
     - SNOWY_SLOPES
@@ -21,16 +22,18 @@ chicken_spawn:
   Chance: 0.001
   Priority: 2
   UseWorldScaling: false
+  Cooldown: 60
   Worlds: world
 
 horse_spawn:
   Action: ADD
   Type: hecarim
   Level: 1
-  Chance: 0.001
+  Chance: 0.00005
   Priority: 2
   UseWorldScaling: false
   Worlds: world
+  Cooldown: 600
   Biomes:
     - DESSERT
     - SNOWY_PLAINS

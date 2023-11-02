@@ -6,24 +6,42 @@ kfc:
 
 hecarim:
   type: HORSE
+  Options:
+    Tameable: true
+    Despawn: false
 
 shawn:
   type: SHEEP
 
 camela:
   type: CAMEL
+  Options:
+    Tameable: true
+    Despawn: false
 
 llama_index:
   type: LLAMA
+  Options:
+    Tameable: true
+    Despawn: false
 
 kitten:
   type: CAT
+  Options:
+    Tameable: true
+    Despawn: false
 
 ocelott:
   type: OCELOT
+  Options:
+    Tameable: true
+    Despawn: false
 
 kon_fu_panda:
   type: PANDA
 
 papa:
   type: PARROT
+  Options:
+    Tameable: true
+    Despawn: false

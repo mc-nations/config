@@ -11,6 +11,7 @@ services:
     environment:
       ALLOW_EMPTY_PASSWORD: "TRUE"
       TZ: "Europe/Berlin"
+    restart: always
   discord-bot:
     build: ./discord-bot
     networks:
@@ -18,6 +19,7 @@ services:
     depends_on:
       - redis
       - minecraft
+    restart: always
   minecraft:
     image: itzg/minecraft-server
     tty: true
@@ -56,6 +58,7 @@ services:
       - ./plugins:/plugins
       - ./configs:/config
       - ./data:/data
+    restart: always
 
 networks:
   redis-net:

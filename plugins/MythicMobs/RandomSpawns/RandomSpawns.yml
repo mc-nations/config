@@ -141,7 +141,7 @@ horse_spawn_0_5:
   Worlds: world
   Bioms:
     - SNOWY_PLAINS
-    - DESSERT
+    - DESERT
   Conditions:
     - playersOnline{amount=>0}
     - playersOnline{amount=<6}
@@ -156,7 +156,7 @@ horse_spawn_5_15:
   Worlds: world
   Biomes:
     - SNOWY_PLAINS
-    - DESSERT
+    - DESERT
   Conditions:
     - playersOnline{amount=>5}
     - playersOnline{amount=<16}
@@ -171,7 +171,7 @@ horse_spawn_15_25:
   Worlds: world
   Biomes:
     - SNOWY_PLAINS
-    - DESSERT
+    - DESERT
   Conditions:
     - playersOnline{amount=>15}
     - playersOnline{amount=<26}
@@ -186,7 +186,7 @@ horse_spawn_25_50:
   Worlds: world
   Biomes:
     - SNOWY_PLAINS
-    - DESSERT
+    - DESERT
   Conditions:
     - playersOnline{amount=>25}
     - playersOnline{amount=<51}
@@ -201,7 +201,7 @@ horse_spawn_50_plus:
   Worlds: world
   Biomes:
     - SNOWY_PLAINS
-    - DESSERT
+    - DESERT
   Conditions:
     - playersOnline{amount=>50}
 
@@ -285,7 +285,7 @@ camel_llama_spawn_0_5:
   UseWorldScaling: false
   Worlds: world
   Biomes:
-    - DESSERT
+    - DESERT
   Conditions:
     - playersOnline{amount=>0}
     - playersOnline{amount=<6}
@@ -299,7 +299,7 @@ camel_llama_spawn_5_15:
   UseWorldScaling: false
   Worlds: world
   Biomes:
-    - DESSERT
+    - DESERT
   Conditions:
     - playersOnline{amount=>5}
     - playersOnline{amount=<16}
@@ -313,7 +313,7 @@ camel_llama_spawn_15_25:
   UseWorldScaling: false
   Worlds: world
   Biomes:
-    - DESSERT
+    - DESERT
   Conditions:
     - playersOnline{amount=>15}
     - playersOnline{amount=<26}
@@ -327,7 +327,7 @@ camel_llama__spawn_25_50:
   UseWorldScaling: false
   Worlds: world
   Biomes:
-    - DESSERT
+    - DESERT
   Conditions:
     - playersOnline{amount=>25}
     - playersOnline{amount=<51}
@@ -341,7 +341,7 @@ camel_llama_spawn_50_plus:
   UseWorldScaling: false
   Worlds: world
   Biomes:
-    - DESSERT
+    - DESERT
   Conditions:
     - playersOnline{amount=>50}
 
@@ -433,7 +433,7 @@ cat_spawn_0_5:
   UseWorldScaling: false
   Worlds: world
   Biomes:
-    - DESSERT
+    - DESERT
     - SNOWY_PLAINS
     - SNOWY_TAIGA
   Conditions:
@@ -449,7 +449,7 @@ cat_spawn_5_15:
   UseWorldScaling: false
   Worlds: world
   Biomes:
-    - DESSERT
+    - DESERT
     - SNOWY_PLAINS
     - SNOWY_TAIGA
   Conditions:
@@ -465,7 +465,7 @@ cat_spawn_15_25:
   UseWorldScaling: false
   Worlds: world
   Biomes:
-    - DESSERT
+    - DESERT
     - SNOWY_PLAINS
     - SNOWY_TAIGA
   Conditions:
@@ -481,7 +481,7 @@ cat_spawn_25_50:
   UseWorldScaling: false
   Worlds: world
   Biomes:
-    - DESSERT
+    - DESERT
     - SNOWY_PLAINS
     - SNOWY_TAIGA
   Conditions:
@@ -497,7 +497,7 @@ cat_spawn_50_plus:
   UseWorldScaling: false
   Worlds: world
   Biomes:
-    - DESSERT
+    - DESERT
     - SNOWY_PLAINS
     - SNOWY_TAIGA
   Conditions:

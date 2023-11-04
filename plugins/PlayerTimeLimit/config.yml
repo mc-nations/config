@@ -16,7 +16,7 @@ boss_bar:
   color: RED
   style: SEGMENTED_10
 time_limits:
-  default: 90000
+  default: 25200
   vip: 7200
   op: 0
 notification:

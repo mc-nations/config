@@ -6,7 +6,7 @@ world_whitelist_system:
     - world_nether
     - world_the_end
   teleport_coordinates_on_kick: spawn;0;60;0;90;0
-reset_time: "22:00"
+reset_time: "23:59"
 reset_day: Sun
 information_message_enabled_by_default: true
 data_save_time: 5
@@ -16,7 +16,7 @@ boss_bar:
   color: RED
   style: SEGMENTED_10
 time_limits:
-  default: 25200
+  default: 90000
   vip: 7200
   op: 0
 notification:

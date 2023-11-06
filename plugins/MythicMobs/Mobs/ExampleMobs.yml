@@ -1,47 +1,71 @@
 snow_cow:
   type: COW
+  Options:
+    PreventLeashing: false
+    PreventRenaming: false
 
 kfc:
   type: CHICKEN
+  Options:
+    PreventLeashing: false
+    PreventRenaming: false
 
 hecarim:
   type: HORSE
   Options:
     Tameable: true
     Despawn: false
+    PreventLeashing: false
+    PreventRenaming: false
 
 shawn:
   type: SHEEP
+  Options:
+    PreventLeashing: false
+    PreventRenaming: false
 
 camela:
   type: CAMEL
   Options:
     Tameable: true
     Despawn: false
+    PreventLeashing: false
+    PreventRenaming: false
 
 llama_index:
   type: LLAMA
   Options:
     Tameable: true
     Despawn: false
+    PreventLeashing: false
+    PreventRenaming: false
 
 kitten:
   type: CAT
   Options:
     Tameable: true
     Despawn: false
+    PreventLeashing: false
+    PreventRenaming: false
 
 ocelott:
   type: OCELOT
   Options:
     Tameable: true
     Despawn: false
+    PreventLeashing: false
+    PreventRenaming: false
 
 kon_fu_panda:
   type: PANDA
+  Options:
+    PreventLeashing: false
+    PreventRenaming: false
 
 papa:
   type: PARROT
   Options:
     Tameable: true
     Despawn: false
+    PreventLeashing: false
+    PreventRenaming: false

@@ -4,7 +4,7 @@
 # https://github.com/plan-player-analytics/Plan/wiki/Bukkit-Configuration
 # -----------------------------------------------------
 Server:
-    ServerName: Plan
+    ServerName: Nations
 # -----------------------------------------------------
 Plugin:
     Logging:
@@ -47,7 +47,7 @@ Webserver:
     Alternative_IP:
         Enabled: true
         # %port% is replaced automatically with Webserver.Port
-        Address: ${CFG_PLAN_HOSTNAME}:%port%
+        Address: ${CFG_PLAN_HOSTNAME}
     # Internal IP usually does not need to be changed, only change it if you know what you're doing!
     # 0.0.0.0 allocates Internal (local) IP automatically for the WebServer.
     Internal_IP: 0.0.0.0
@@ -274,11 +274,11 @@ Plugins:
           - "%plan_server_uuid%"
         Tracked_player_placeholders:
           - "%example_placeholder%"
-        Enabled: true
+        Enabled: false
     Towny:
         HideTowns:
           - ExampleTown
     ViaVersion:
-        Enabled: true
+        Enabled: false
 Customized_files:
     Path: "web"

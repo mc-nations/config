@@ -1,6 +1,7 @@
 data
 nations_map_server
 multipaper_test
+redis-logger
 tmp
 *.env
 /**/*logs

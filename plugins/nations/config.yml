@@ -5,6 +5,11 @@ event_start:
 
 motd_countdown: true
 
+chat_format:
+  enabled: true
+  global: "§7@All: %nations_prefix%§7%displayname% >§f %message%"
+  team: "%team_color%@%team_name%: §7%displayname% >§f %message%"
+
 game_rules:
   enabled: true
   world:
@@ -45,7 +50,7 @@ teams:
 
 enforce_teams: true
 enable_random_spawn: true
-team_borders: true
+team_borders: false
 
 disable_mending: true
 

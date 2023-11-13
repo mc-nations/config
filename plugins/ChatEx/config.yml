@@ -58,7 +58,7 @@ debug: false
 EventPriority: NORMAL
 Locale: en-EN
 Ads:
-  Enabled: true
+  Enabled: false
   Bypass:
   - 127.0.0.1
   - my-domain.com
@@ -91,7 +91,7 @@ Ads:
     ReduceThreshold: 0.1
     MaxLinkLength: 10
 AntiSpam:
-  Seconds: 5
+  Seconds: 2
   Enable: true
 BlockedWords:
 - shit
